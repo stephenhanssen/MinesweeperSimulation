@@ -17,15 +17,10 @@ public class MinesweeperShipTest {
     @Test
     public void verifyRead()
     {
-        FileReader reader = null;
-        try {
-            reader = new FileReader("gamma\nnorth\nalpha west");
-        } catch(FileNotFoundException e)
-        {
-            System.out.println("Failed to read file: " + e);
-            assertTrue("Failed to read file "+e, false);
-            return;
-        }
+        CharArrayReader reader = null;
+
+        reader = new CharArrayReader("gamma\nnorth\nalpha west");
+
         BufferedReader stream = new BufferedReader(reader);
         MinesweeperShip ship = new MinesweeperShip(stream, new Position());
         System.out.println(ship.toString());
