@@ -3,6 +3,6 @@ delta south
 west
 gamma east
 east
-gamma west
+gamma 	 	west
 south
 delta

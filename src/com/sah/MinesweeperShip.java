@@ -177,7 +177,7 @@ public class MinesweeperShip {
         TurnActions rVal = new TurnActions();
         if(line!=null && !line.equals(""))
         {
-            String splits[] = line.split(" ");
+            String splits[] = line.split("\\s+");
             if(splits.length==2)
             {
                 boolean fireFound = rVal.setFiringFromString(splits[0]);
