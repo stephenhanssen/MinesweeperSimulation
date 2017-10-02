@@ -1,0 +1,3 @@
+gamma
+north
+alpha west
